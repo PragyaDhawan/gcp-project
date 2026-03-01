@@ -1,4 +1,4 @@
-runtime: python39  # or your preferred version
+runtime: custom  # or your preferred version
 env: flex
 
-entrypoint: gunicorn -b :$PORT main:app  # example for Flask
+entrypoint: gunicorn -b :$PORT main:app  
