@@ -1,3 +1,8 @@
 fastapi
 uvicorn[standard]
 gunicorn
+pymongo[srv]>=4.7
+dnspython==2.4.2
+google-cloud-secret-manager
+certifi
+requests
