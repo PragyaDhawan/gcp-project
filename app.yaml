@@ -4,4 +4,11 @@ env: flex
 entrypoint: gunicorn -b :$PORT main:app  
 
 network:
-  name: default
+  name: projects/project-882e67df-9fa5-40d3-9a8/global/networks/my-vpc
+
+  subnetwork_name: my-subnet
+
+  instance_ip_mode: internal
+
+env_variables:
+  MONGO_SECRET_RESOURCE: "projects/project-882e67df-9fa5-40d3-9a8/secrets/mongo-uri"
